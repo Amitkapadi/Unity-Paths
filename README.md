@@ -4,32 +4,28 @@ Note on various unity specific paths and file handling related issues.
 (Note: written based on Unity 5.x, can be different on the previous version)
 
 
-iPhone
-=======
+###iPhone
+
 * **Application.persistentDataPath**: /var/mobile/Applications/[program_ID]/Documents  (read/write)
 * **Application.dataPath**: /var/mobile/Applications/[program_ID]/[appname].app/Data  (read only)
 * **Application.streamingAssetsPath**: /var/mobile/Applications/[program_ID]/[appname].app/Data/Raw   (read only)
 * **Application.temporaryCachePath**: /var/mobile/Applications/[program_ID]/Library/Caches  (read/write)
 
-Android
-=======
+###Android
 
-[External]
-----------
+####[External]
 * **Application.persistentDataPath**: /mnt/sdcard/Android/data/[bundle id]/files  (read/write)
 * **Application.dataPath**: /data/app/[bundle id-number].apk
 * **Application.streamingAssetsPath**: jar:file:///data/app/[bundle id].apk!/assets  (read only, should access via WWW)
 * **Application.temporaryCachePath**: /mnt/sdcard/Android/data/[bundle id]/cache
 
-[Internal]
-----------
+####[Internal]
 * **Application.persistentDataPath**: /data/data/[bundle id]/files/  (read/write)
 * **Application.dataPath**: /data/app/[bundle id-number].apk
 * **Application.streamingAssetsPath**: jar:file:///data/app/[bundle id].apk!/assets  (read only, should access via WWW)
 * **Application.temporaryCachePath**: /data/data/com.xxx.xxx/cache/
 
-WEB
-====
+###WEB
 read only
 
 * **Application.persistentDataPath**: /
@@ -37,30 +33,26 @@ read only
 * **Application.streamingAssetsPath**: empty
 * **Log**: C:\Users\username\AppData\Local\Temp\UnityWebPlayer\log\log_UNIQUEID.txt
 
-Window Player
-=============
+###Window Player
 * **Application.persistentDataPath**: [UserDirectory]/AppData/LocalLow/[Company]/[Product Name]  (read/write)
 * **Application.dataPath**: [Exe file]/[Exe file]_Data : read/write
 * **Application.streamingAssetsPath**: [Exe file]/[Exe file]_Data/StreamingAssets  (read/write)
 * **Application.temporaryCachePath**: %LocalAppData%/Local/Temp/Temp/%Company%/%Product%
 * **Log**: _EXECNAME_Data_\output_log.txt
 
-MAC Player
-==========
+###MAC Player
 * **Application.persistentDataPath**: [UserDirectory]/Library/Caches/unity.[Company].[Product] (read/write)
 * **Application.dataPath**: [Exe file].app/Contents
 * **Application.streamingAssetsPath**: [Exe file].app/Contents/Data/StreamingAssets (read/write)
 * **Log**: ~/Library/Logs/Unity/Player.log
 
-Window Editor
-=============
+###Window Editor
 * **Application.persistentDataPath**: [UserDirectory]/AppData/LocalLow/[Company]/[Product]  (read/write)
 * **Application.dataPath**: [ProjectDirectory]/Assets
 * **Application.streamingAssetsPath**: [ProjectDirectory]/Assets/StreamingAssets	 (read/write)
 * **Log**: C:\Users\username\AppData\Local\Unity\Editor\Editor.log
 
-MAC Editor
-==========
+###MAC Editor
 * **Application.persistentDataPath**: [UserDirectory]/Library/Caches/unity.[Company].[Product]  (read/write)
 * **Application.dataPath**: [ProjectDirectory]/Assets
 * **Application.streamingAssetsPath**: [ProjectDirectory]/Assets/StreamingAssets  (read/write)
