@@ -1,7 +1,5 @@
 # Unity-Paths
-Note on various unity specific paths and file handling related issues.
-
-(Note: written based on Unity 5.x, can be different on the previous version)
+Note on various unity specific paths and file handling related issues.(Note: written based on Unity 5.x, can be different on the previous version)
 
 
 ###iPhone
@@ -58,8 +56,29 @@ read only
 * **Application.streamingAssetsPath**: [ProjectDirectory]/Assets/StreamingAssets  (read/write)
 * **Log**: ~/Library/Logs/Unity/Editor.log
 
+##Other Editor paths (less knonwn)
+
+It also provides less known various editor paths as the followings:
+
+* Unity preferences folder
+* Editor assembly path
+* Engine assembly path
+* External script editor path
+* layout folder path
+* Assetstore download folder path
+* Editor log path
+
 
 ## References
 
 * [Unity's Paths](http://masa795.hatenablog.jp/entry/2013/05/14/100024)
 * [StandardPaths](https://github.com/nickgravelyn/UnityToolbag/tree/master/StandardPaths) on [UnityToolbag](https://github.com/nickgravelyn/UnityToolbag) github repository
+
+
+##License
+
+This code is distributed under the terms and conditions of the MIT license.
+
+Except [UnityDiskSpacePlugin](https://github.com/asus4/UnityDiskSpacePlugin), the license of the that follow theirs.
+
+Copyright (c)2016 Kim, Hyoun Woo
