@@ -1,6 +1,7 @@
 # Unity-Paths
 Note on various unity specific paths and file handling related issues.(Note: written based on Unity 5.x, can be different on the previous version)
 
+The followings show brief summary for the various Application.XXX paths of Unity engine provides which are depend on platform. See the code of [PathUtil.cs](https://github.com/kimsama/Unity-Paths/blob/master/Assets/Scripts/PathUtil.cs) file which can be found under *'Assets/Script'* folder. 
 
 ###iPhone
 
