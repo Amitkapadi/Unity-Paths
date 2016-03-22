@@ -24,6 +24,13 @@ The followings show brief summary for the various *'Application.XXX'* paths of U
 * **Application.streamingAssetsPath**: jar:file:///data/app/[bundle id].apk!/assets  (read only, should access via WWW)
 * **Application.temporaryCachePath**: /data/data/com.xxx.xxx/cache/
 
+Get accessing a file in the *streamingAssetsPath* on Android is a bit different with other platforms.
+
+On Android the files are contained within a compressed .jar file (which is essentially the same format as standard zip-compressed files). This means that if you should use Unity’s WWW class to retrieve the file or you may need to use additional software to see inside the .jar archive and obtain the file.
+
+See the [code snip](https://gist.github.com/amowu/8121334) for that case. It shows that copy file from streamingAssetsPath then write onto persistenceDataPath to get its path.
+
+
 ###WEB
 read only
 
