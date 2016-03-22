@@ -28,7 +28,7 @@ Get accessing a file in the *streamingAssetsPath* on Android is a bit different 
 
 On Android the files are contained within a compressed .jar file (which is essentially the same format as standard zip-compressed files). This means that if you should use Unity’s WWW class to retrieve the file or you may need to use additional software to see inside the .jar archive and obtain the file.
 
-See the [code snip](https://gist.github.com/amowu/8121334) for that case. It shows that copy file from streamingAssetsPath then write onto persistenceDataPath to get its path.
+See the [code snip](https://gist.github.com/amowu/8121334) for that case. Frist, it copies a file from streamingAssetsPath then write onto persistenceDataPath and return its path. So the file can be safely read even any changes can be written.
 
 
 ###WEB
