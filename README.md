@@ -32,39 +32,39 @@ WEB
 ====
 read only
 
-* Application.persistentDataPath : /
-* Application.dataPath : folder in unity3d file
-* Application.streamingAssetsPath : empty
-* Log : C:\Users\username\AppData\Local\Temp\UnityWebPlayer\log\log_UNIQUEID.txt
+* *Application.persistentDataPath*: /
+* *Application.dataPath*: folder in unity3d file
+* *Application.streamingAssetsPath*: empty
+* *Log*: C:\Users\username\AppData\Local\Temp\UnityWebPlayer\log\log_UNIQUEID.txt
 
 Window Player
 =============
-* Application.persistentDataPath : [UserDirectory]/AppData/LocalLow/[Company]/[Product Name]  (read/write)
-* Application.dataPath : [Exe file]/[Exe file]_Data : read/write
-* Application.streamingAssetsPath : [Exe file]/[Exe file]_Data/StreamingAssets  (read/write)
-* Application.temporaryCachePath : %LocalAppData%/Local/Temp/Temp/%Company%/%Product%
-* Log : _EXECNAME_Data_\output_log.txt
+* *Application.persistentDataPath*: [UserDirectory]/AppData/LocalLow/[Company]/[Product Name]  (read/write)
+* *Application.dataPath*: [Exe file]/[Exe file]_Data : read/write
+* *Application.streamingAssetsPath*: [Exe file]/[Exe file]_Data/StreamingAssets  (read/write)
+* *Application.temporaryCachePath*: %LocalAppData%/Local/Temp/Temp/%Company%/%Product%
+* *Log*: _EXECNAME_Data_\output_log.txt
 
 MAC Player
 ==========
-* Application.persistentDataPath : [UserDirectory]/Library/Caches/unity.[Company].[Product] (read/write)
-* Application.dataPath : [Exe file].app/Contents
-* Application.streamingAssetsPath : [Exe file].app/Contents/Data/StreamingAssets (read/write)
-* Log : ~/Library/Logs/Unity/Player.log
+* *Application.persistentDataPath*: [UserDirectory]/Library/Caches/unity.[Company].[Product] (read/write)
+* *Application.dataPath*: [Exe file].app/Contents
+* *Application.streamingAssetsPath*: [Exe file].app/Contents/Data/StreamingAssets (read/write)
+* *Log*: ~/Library/Logs/Unity/Player.log
 
 Window Editor
 =============
-* Application.persistentDataPath : [UserDirectory]/AppData/LocalLow/[Company]/[Product]  (read/write)
-* Application.dataPath : [ProjectDirectory]/Assets
-* Application.streamingAssetsPath : [ProjectDirectory]/Assets/StreamingAssets	 (read/write)
-* Log : C:\Users\username\AppData\Local\Unity\Editor\Editor.log
+* *Application.persistentDataPath*: [UserDirectory]/AppData/LocalLow/[Company]/[Product]  (read/write)
+* *Application.dataPath*: [ProjectDirectory]/Assets
+* *Application.streamingAssetsPath*: [ProjectDirectory]/Assets/StreamingAssets	 (read/write)
+* *Log*: C:\Users\username\AppData\Local\Unity\Editor\Editor.log
 
 MAC Editor
 ==========
-* Application.persistentDataPath : [UserDirectory]/Library/Caches/unity.[Company].[Product]  (read/write)
-* Application.dataPath : [ProjectDirectory]/Assets
-* Application.streamingAssetsPath : [ProjectDirectory]/Assets/StreamingAssets  (read/write)
-* Log : ~/Library/Logs/Unity/Editor.log
+* *Application.persistentDataPath*: [UserDirectory]/Library/Caches/unity.[Company].[Product]  (read/write)
+* *Application.dataPath*: [ProjectDirectory]/Assets
+* *Application.streamingAssetsPath*: [ProjectDirectory]/Assets/StreamingAssets  (read/write)
+* *Log*: ~/Library/Logs/Unity/Editor.log
 
 
 ## References
